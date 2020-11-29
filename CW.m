@@ -97,3 +97,17 @@ end
   logn=log10(n);
   logt=log10(t);
   plot(logn, logt);
+  
+  T5=open('T4.fig');
+    figure(T5)
+    hold on;
+    //trad
+    b0=-8.37;
+    b1= 3.05;
+    logt=b0+b1logn;
+    plot(logn,logt)
+    //CW
+    a0=-8.49;
+    a1= 3.02;
+    logt=a0+a1logn;
+    plot(logn,logt)
